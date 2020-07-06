@@ -64,7 +64,7 @@ class App extends Component {
           </div>
           <div className="row">
             <div className="col-md-6">
-              <button type="submit" className="btn btn-primary">
+              <button type="submit" id="addBtn" className="btn btn-primary">
                 Add Task
               </button>
             </div>

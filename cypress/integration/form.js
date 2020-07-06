@@ -9,31 +9,24 @@ describe('Form', () => {
 
     it('accepts input', () => {
         const input = "Learn about Cypress"
-        cy.get('.form-control')
-          .type(input)
-          .should('have.value', input)
+        cy.get('.form-control').type(input).should('have.value', input)
+        cy.screenshot()
       })
 
       it('displays list of todo', () => {
-        cy.get('li')
-          .should('have.length', 2)
+        cy.get('li').should('have.length', 2)
       })
 
       it('adds a new todo', () => {
         const input = "Learn about cypress"
-        cy.get('.form-control')
-          .type(input)
-          .type('{enter}')
-          .get('li')
-          .should('have.length', 3)
+        cy.get('.form-control').type(input)
+        cy.get('#addBtn').click()
+        cy.get('li').should('have.length', 3)
       })
 
       it('deletes a todo', () => {
-        cy.get('li')
-          .first()
-          .find('.btn-danger')
-          .click()
-          .get('li')
-          .should('have.length', 1)
+        cy.get('li').first()
+          .find('.btn-danger').click()
+          .get('li').should('have.length', 1)
       })
   })
