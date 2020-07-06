@@ -1,6 +1,20 @@
-.btn-primary, .container, .todo-list {
-  margin-top: 1em;
+.btn-primary
+{
+  margin-top: 2em;
+  float: right;
+  width:50%;
+  background-color:white;
+  color: coral;
+  border-color: coral;
+  font-weight: bold;
+  font-size: large;
 }
 .btn-danger {
   margin-left: 1em;
+  background-color: transparent;
+  color: red;
+}
+
+.container, .todo-list {
+margin-top: 2em;
 }

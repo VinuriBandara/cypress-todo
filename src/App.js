@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React, { Component} from 'react';
 import Todo from './Todo';
 import './App.css'
 
@@ -43,15 +43,18 @@ class App extends Component {
 
   render() {
     return (
+
       <div className="container">
         <div className="row">
-          <div className="col-md-6">
-            <h2>Add Todo</h2>
+          <div className="col-md-12">
+            <h1 style={{textAlign:"center",marginBottom:"1em", color:"salmon"}}>MY TODO LIST</h1>
           </div>
         </div>
+
+      
         <form onSubmit={this.handleSubmit}>
           <div className="row">
-            <div className="col-md-6">
+            <div className="col-md-12">
               <input
                 type="text"
                 autoFocus
@@ -63,7 +66,7 @@ class App extends Component {
             </div>
           </div>
           <div className="row">
-            <div className="col-md-6">
+            <div className="col-md-12">
               <button type="submit" id="addBtn" className="btn btn-primary">
                 Add Task
               </button>
@@ -72,7 +75,7 @@ class App extends Component {
         </form>
         <div className="row todo-list">
           <div className="col-md-6">
-            <h3>Lists</h3>
+            <h3 style={{color:"#f96353"}}>My tasks</h3>
             {
               !this.state.list.length
               ? (
@@ -83,7 +86,7 @@ class App extends Component {
                 <ul>
                   {this.state.list.map(item => {
                     return (
-                      <li key={item.id}>
+                      <li key={item.id} style={{fontSize:"18px"}}>
                         <Todo {...item} removeTodo={this.handleRemove} />
                       </li>
                     );
@@ -94,6 +97,7 @@ class App extends Component {
           </div>
         </div>
       </div>
+
     );
   }
 }
