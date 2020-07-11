@@ -11,6 +11,7 @@
 }
 .btn-danger {
   margin-left: 1em;
+  margin-top: 0.5em;
   background-color: transparent;
   color: red;
 }

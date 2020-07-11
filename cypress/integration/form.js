@@ -14,19 +14,19 @@ describe('Form', () => {
       })
 
       it('displays list of todo', () => {
-        cy.get('li').should('have.length', 2)
+        cy.get('li').should('have.length', 4)
       })
 
       it('adds a new todo', () => {
         const input = "Learn about cypress"
         cy.get('.form-control').type(input)
         cy.get('#addBtn').click()
-        cy.get('li').should('have.length', 3)
+        cy.get('li').should('have.length', 5)
       })
 
       it('deletes a todo', () => {
         cy.get('li').first()
           .find('.btn-danger').click()
-          .get('li').should('have.length', 1)
+          .get('li').should('have.length', 3)
       })
   })

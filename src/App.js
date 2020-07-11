@@ -13,8 +13,17 @@ class App extends Component {
       },
       {
         id: 2,
-        value: "Write the testing reflection"
+        value: "Write the continuous testing reflection"
+      },
+      {
+        id: 3,
+        value: "Complete API testing automation"
+      },
+      {
+        id: 4,
+        value: "Create schedule for July-August"
       }
+      
     ],
     item: ""
   };
