@@ -22,7 +22,16 @@ class App extends Component {
       {
         id: 4,
         value: "Create schedule for July-August"
+      },
+      {
+        id: 5,
+        value: "Buy pedigree for cookie girl"
+      },
+      {
+        id: 6,
+        value: "Buy vitamin for the cats"
       }
+
       
     ],
     item: ""

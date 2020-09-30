@@ -18,4 +18,7 @@
 
 .container, .todo-list {
 margin-top: 2em;
+margin-bottom: 2em;
+border-color: aliceblue;
+border-radius: 2px;
 }
