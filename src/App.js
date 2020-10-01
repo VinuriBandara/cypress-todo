@@ -25,7 +25,7 @@ class App extends Component {
       },
       {
         id: 5,
-        value: "Buy pedigree for cookie girl"
+        value: "Buy pedigree for cookie"
       },
       {
         id: 6,
@@ -92,7 +92,7 @@ class App extends Component {
           </div>
         </form>
         <div className="row todo-list">
-          <div className="col-md-6">
+          <div className="col-md-8">
             <h3 style={{color:"#f96353"}}>My tasks</h3>
             {
               !this.state.list.length
